@@ -1,3 +1,25 @@
 body {
   margin: 0;
 }
+body {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+.first-paragraph {
+    font-style: italic;
+}
+
+.second-paragraph {
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
