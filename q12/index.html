@@ -8,12 +8,56 @@
 </head>
 
 <body>
-    <!-- lägg padding på alla sidor ute i kanterna, som en ram runt hela webbläsarens fönster
-     - gör rubriken vit
-     - gör endast första paragrafen kursiv (italic)
-     - gör endast den andra paragrafen vit
-     - ändra bakgrundsfärgen på hela webbläsarens fönster till en färg som står i bra kontrast till både svart och vit.
-        allt textinnehåll på sidan ska vara tydligt och synligt -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 5. Ändra bakgrundsfärgen på hela webbläsarens fönster till en färg som står i bra kontrast till både svart och vitt. */
+        /* Jag väljer en medelgrå färg (#333) för god kontrast mot vit text och synlighet för eventuell svart standardtext. */
+        body {
+            /* 1. Lägg padding på alla sidor ute i kanterna, som en ram runt hela webbläsarens fönster. */
+            padding: 20px; /* Lägger till en ram på 20px runt om */
+            background-color: #333; 
+            /* 6. Allt textinnehåll på sidan ska vara tydligt och synligt. 
+            Sätter standardfärgen till vit för att synas bra på den mörka bakgrunden. */
+            color: white; 
+        }
+
+        /* 2. Gör rubriken vit. (Redan satt på body, men kan vara bra att specificera för h1 om standardfärgen på body ändras) */
+        h1 {
+            color: white;
+        }
+
+        /* 3. Gör endast första paragrafen kursiv (italic). */
+        .first-paragraph {
+            font-style: italic;
+            /* Säkerställer att den första paragrafen också är tydlig, även om den är kursiv. */
+            color: white; 
+        }
+
+        /* 4. Gör endast den andra paragrafen vit. (Redan satt på body, men specificeras här för att vara exakt) */
+        .second-paragraph {
+            color: white;
+        }
+
+        /* Säkerställer att containern är centrerad och har en maxbredd. */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rubrik</h1>
+        <p class="first-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="second-paragraph">Dolor ducimus eum temporibus placeat neque maiores perspiciatis sequi id</p>
+    </div>
+</body>
+</html>
     <div class="container">
         <h1>Rubrik</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>

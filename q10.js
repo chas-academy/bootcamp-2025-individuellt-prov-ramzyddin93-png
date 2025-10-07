@@ -1,3 +1,5 @@
+const getname = (person) => person.name;
+
 const data = [
   {
     name: "John",
@@ -13,7 +15,7 @@ const data = [
   },
 ];
 
-// returna namnet i samtliga objekt i arrayen
+// returna namnet i objektet som denna funktion tar emot
 const getName = (person) => {};
 
 // lämna denna orörd
@@ -24,3 +26,4 @@ export const getAllNames = () => {
   });
   return names;
 };
+ 

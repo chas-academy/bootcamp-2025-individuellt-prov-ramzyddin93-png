@@ -8,15 +8,20 @@
 </head>
 
 <body>
-    <!-- ett eller flera element saknas för att formuläret ska fungera -->
-    <form onsubmit="alert('Formuläret skickades')">
-        <label for="name">Namn</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
-        <label for="message">Meddelande</label>
-        <textarea id="message" name="message"></textarea>
-    </form>
+    <form action="/skicka-formularet" method="POST" onsubmit="alert('Formuläret skickades')">
+    <label for="name">Namn</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Meddelande</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">skicka</button>
+</form>
+    
+</form>
 </body>
 
 </html>
